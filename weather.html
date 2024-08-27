@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="shaDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="final.css">
+		<!-- Custom JavaScript-->
+		<script src="final.js?rev=1"></script>
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row nv">
+				<nav class="navbar navbar-expand-lg"> 
+					<a href="landing.html"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3767/3767036.png"></img></a>
+					<a class="nav-link first"href="landing.html">Home</a>
+				<a class="nav-link active" href="weather.html">Weather</a>
+				<a class="nav-link" href="history.html">History</a>
+				</nav>
+			</div>
+		</div>
+		
+		<div class="row justify-content-md-center" id="location">
+		</div>
+		<div class="container-fluid lg">
+			<div class="row">
+				<div class="col w1" id="w1">
+					<form autocomplete="off">
+						<label for="inp" id="inptex">Enter Location Here:</label><br>
+						<input type="text" id="inp" name="inp" placeholder=" cleveland">
+						<input type="button" id="inpbut" onclick="callTomTom();" value="GO">
+					</form>
+				</div>
+
+			</div>
+			<div class="row justify-content-md-center" id="w2">
+				<div class="col-sm-3 cw2" id="col1"></div>
+				<div class="col-sm-3 cw2" id="col2"></div>
+				<div class="col-sm-3 cw2" id="col3"></div>
+				<div class="w-100"></div>
+				<div class="col-sm-3 cw2" id="col4"></div>
+				<div class="col-sm-3 cw2" id="col5"></div>
+				<div class="w-100"></div>
+				<div class="col" id="col6"></div>
+			</div>
+		</div>
+	</body>
+</html>
